@@ -81,3 +81,42 @@ main{
     }
 
 }
+
+@media (min-width:900px){
+    main{
+
+        section{
+            flex-direction: row;
+            padding: 1rem 3rem;
+            .top,.bottom{
+                width: 50%;
+            }
+
+            
+            .bottom{
+                padding: 3.5rem;
+                justify-content: space-between;
+
+                .text{
+                    h1{
+                        width: 91%;
+                        line-height: 1.35;
+                        font-size: 3.5rem;
+                        font-weight: 200 ;
+                        padding: 0 0.3rem;
+                        letter-spacing: 0.3rem;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 1.5rem;
+                    }
+                    button{
+                        margin: 0.5rem 0;
+                    }
+                   
+                }
+                
+            }   
+        }
+    }
+}

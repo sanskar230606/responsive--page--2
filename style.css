@@ -74,4 +74,33 @@ main section .bottom .text button {
   outline: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main section .top, main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    padding: 3.5rem;
+    justify-content: space-between;
+  }
+  main section .bottom .text h1 {
+    width: 91%;
+    line-height: 1.35;
+    font-size: 3.5rem;
+    font-weight: 200;
+    padding: 0 0.3rem;
+    letter-spacing: 0.3rem;
+  }
+  main section .bottom .text p {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  main section .bottom .text button {
+    margin: 0.5rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
