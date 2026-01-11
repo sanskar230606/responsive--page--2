@@ -215,6 +215,31 @@ main{
             }
         }
     }
+    header.two{
+        width: 100%;
+        @include flex-coloum(1rem);
+        flex-direction: row;
+        padding: 1rem;
+
+        .inside{
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.549);
+            
+
+            h1{
+                text-transform:uppercase ;
+                font-size: 2rem;
+                font-weight: 250;
+                // word-spacing: 12rem;
+                letter-spacing: 0.8rem;
+                color: black;
+            }
+        }
+    }
     section.view5{
         display: flex;
         flex-direction: column;
@@ -276,6 +301,102 @@ main{
             background-image: url(./image6.png);
         }
         
+    }
+    section.view6{
+        width: 100%;
+        @include flex-coloum(1rem);
+        padding: 0rem 1rem ;
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+        .bottom{
+            @include flex-coloum(5rem);
+            width: 100%;
+            background-color: #242424;
+            padding: 2.3rem;
+            border-radius: 15px;
+            justify-content: space-between;
+
+            .paragraph{
+                @include flex-coloum(0.8rem);
+                line-height: 1.3;
+
+                p{
+                    opacity: 0.5;
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                }
+                h1{
+                    width: 90%;
+                    text-transform: uppercase;
+                    font-weight: 150;
+                    font-size: 2.2rem;
+                    line-height: 1.3;
+                    letter-spacing: 0.2rem;
+                }
+            }
+            button{
+                width: fit-content;
+                border: none;
+                outline: none;
+                text-transform: uppercase;
+                padding: 0.7rem 2rem;
+                border-radius: 15px;
+                font-size: 1.2rem;
+                font-weight: 100;
+            }
+        }
+    }
+    section.view7{
+        width: 100%;
+        padding: 1rem;
+        .inside{
+            width: 100%;
+            background-color: #CEBD63;
+            border-radius: 15px;
+            padding: 2rem;
+            @include flex-coloum(1rem);
+
+            .left{
+                @include flex-coloum(0.8rem);
+                p{
+                    color: black;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    font-weight: 230;
+                }
+
+                h1{
+                    width: 90%;
+                    color: black;
+                    font-weight: 220;
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                }
+            }
+            .right{
+
+                button{
+                    width: 100%;
+                    border: none;
+                    border-radius: 8px;
+                    outline: none;
+                    padding: 1.2rem 0rem;
+                    background-color: rgba(0, 0, 0, 0.741);
+                    color: rgba(255, 255, 255, 0.887);
+                    font-size: 1rem;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                }
+            }
+        }
+
     }
 }
 
@@ -367,6 +488,39 @@ main{
         section.view5{
             flex-direction: row;
             padding:1rem ;
+        }
+        section.view6{
+            flex-direction: row;
+            .top,.bottom{
+                width: 50%;
+            }
+            .bottom{
+                padding: 4rem;
+            }
+        }
+        section.view7{
+            .inside{
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 4rem ;
+
+                .left{
+                    h1{
+                        width: 75%;
+                        font-size:5rem ;
+                        letter-spacing: 0.3rem;
+                    }
+                }
+                .right{
+                    display: flex;
+                    align-items: end;
+                    button{
+                        // width: 100%;
+                        // width: fit-content;
+                        padding: 1rem 4rem;
+                    }
+                }
+            }
         }
     }
 }
